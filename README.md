@@ -1,9 +1,13 @@
-# Selfstarter
-Selfstarter makes it easy to roll your own crowdfunding site. To get started, fork this repository and change around ```config/settings.yml``` to suit your needs.
+# Weddingstarter
 
-[See it in action](http://selfstarter.us)
+Weddingstarter is a fork of Selfstarter that makes it easy to roll your own crowdfunding site specifically for a wedding or honeymoon. To get started, fork this repository then:
 
-## Background
+1. Copy `config/settings.yml.sample` to `config/settings.yml`
+2. Customize `config/settings.yml`
+
+[See Selfstarter it in action](http://selfstarter.us) (Weddingstarter does not have a sample site)
+
+## Background for Selfstarter:
 
 After a [rejection from Kickstarter](http://techcrunch.com/2012/10/07/the-story-of-lockitron-crowdfunding-without-kickstarter/), we decided to follow in the footsteps of [App.net](https://app.net/) and make our own crowdfunding site for [Lockitron](https://lockitron.com). We've been absolutely blown away by the response. As a first step in what will hopefully be a long history of giving back, we have decided to open source the crowdfunding platform that got us here. Please send questions, comments, or concerns to [hello@lockitron.com](mailto:hello@lockitron.com)!
 
@@ -14,12 +18,13 @@ Selfstarter is a starting point. We made some specific choices with Selfstarter 
 * Selfstarter doesn't come with any authentication, administration, mailers or analytics tools. We recommend adding a basic set of these so that you can message backers and manage orders.
 
 ## Getting Started
+
 *Note: This assumes you have Ruby 1.9.2 or later installed properly and have a basic working knowledge of how to use RubyGems*
 
 First you'll need to fork and clone this repo
 
 ```bash
-git clone https://github.com/lockitron/selfstarter.git
+git clone https://github.com/ramontayag/weddingstarter.git
 ```
 
 Let's get all our dependencies setup:
@@ -72,7 +77,7 @@ heroku open
 ```
 ## Contributing
 
-In it's current state, Selfstarter is very skeletal. We welcome your pull requests. If you're looking to contribute, here are some good starting points.
+In it's current state, Weddingstarter is very skeletal. We welcome your pull requests. If you're looking to contribute, here are some good starting points.
 
 ### Email Updates
 
@@ -82,7 +87,7 @@ Something that we built into Lockitron.com was "Remind Me" functionality. The id
 
 ### Reporting
 
-There is no admin panel with Selfstarter. This could be useful when the project's funding time is over and you want to export your orders elsewhere.
+There is no admin panel with Weddingstarter. This could be useful when the project's funding time is over and you want to export your orders elsewhere.
 
 Relatedly, some analytics would be nice. It'd be good to know how many reservations you receive over time, as well as the specifics of each order. Customers may have questions or might want to modify their order after they've placed it.
 
@@ -93,5 +98,3 @@ Amazon Payments works great for us, but it may not work out for everyone. If you
 ### Tests
 
 There aren't any tests yet. Tests are very welcome!
-
-
